@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/Vine.jpg");
+  color: white;
+}
+button {
+  background-color: white;
+}
+header {
+  text-align: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+form input,
+button {
+  padding: 7px;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+  outline: none !important;
+}
+form button:hover {
+  background-color: aquamarine;
+  transition: all ease 0.8s;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  min-width: 18%;
+  list-style: none;
+}
+.todo {
+  margin: 1rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.todo li {
+  flex: 1;
+}
+.trash-btn,
+.complete-btn {
+  background-color: #448d6b;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.trash-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+.complete-btn:hover {
+  background-color: #09ff00;
+  color: rgb(0, 0, 0);
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.todo-item {
+  padding: 0 0.5rem;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.select {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+  padding: 2px;
+}
+select:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
